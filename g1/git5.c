@@ -1,6 +1,8 @@
 #include<stdio.h>
 int main()
+
 {
+
     int x;
     scanf("%d",&x);
     int resut = 1;
@@ -13,4 +15,5 @@ int main()
     
     printf("%d",resut);
     return(0);
+    
 }
