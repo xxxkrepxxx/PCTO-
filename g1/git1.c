@@ -2,7 +2,7 @@
 
 int main()
 {
-    short x = 1;
+    unsigned short x = 1;
     int y = 29;
     char z = 's';
     long xy = 1200000000000;
