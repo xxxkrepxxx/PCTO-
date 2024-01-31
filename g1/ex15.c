@@ -7,8 +7,9 @@ int main()
     int d = 0;
     printf("inserisci un numero \n");
     scanf("%d",&n);
+    
 
-    while (x < n)
+    while (n > x)
     {
         if (n%x == 0) break;
         {
@@ -16,7 +17,7 @@ int main()
         }
         x = x + 1;
     }
-    if (d = 0)
+    if (d == 0)
     {
         printf("il tuo numero è primo");
     }

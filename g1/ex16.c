@@ -2,28 +2,13 @@
 int main()
 
 {
-    int n;
-    int x = 1;
+    int n = 100;
 
-    scanf("%d",&n);
-    while (x <= n)
-
+    while (n == 0)
     {
-        x = x + 1;
+        printf(" %d",n);
+        n = n-2;
     }
-
-    if (n%x == 0 && n%n == 0)
-    {
-    printf("il numero da te inserito  è un numero primo");
-    }
-
-    else
-    {
-        printf("il numero da te inserito  NON è un numero primo");
-    }
-
     return(0);
-    
-
 
 }
