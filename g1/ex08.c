@@ -4,7 +4,7 @@ int main()
     int n;
     int n1;
     int n2;
-    printf("inserisci 3 misure e scopri se un triangolo può avere tai misure come lati! \n");
+    printf("inserisci 3 misure e scopri se un triangolo può avere tali misure come lati! \n");
     scanf("%d \n %d \n %d", &n,&n1,&n2);
 
     if (n+n1>n2 && n+n2>n1 && n1+n2>n)

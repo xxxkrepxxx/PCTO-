@@ -1,18 +1,15 @@
 #include<stdio.h>
-#include<math.h>
 
-double R(int x,int y, int z,int p, int o, double A)
+float R(double A)
 {
-    double a = A/2
-    double d = A - a * A
-
-    while (d > 0.00001)
+    int t = 0;
+    int s = A/2;
+    while (s != t)
     {
-        a = (a+A/a) / 2.0;
-        d = A-a*a;
+        t = s;
+        s = (A/t+t)/2;
     }
-    return(a);
-
+    return(s);
 }
 
 int main()
@@ -20,14 +17,14 @@ int main()
     int x;
     int y;
     int z;
-    printf("inserisci le dimensioni dei lati di un triangolo");
-    scanf("%d \n %d \n %d",&x,&y,&z);
+    printf("inserisci le dimensioni dei lati di un triangolo \n");
+    scanf("%d %d %d",&x,&y,&z);
 
-    int p = x+y+z;
-    int o = p/2;
-    double A= sqrt(p/2*(o-x)*(o-y)*(o-z));
+    int p = (x+y+z)/2;
+    double A= p*(p-x)*(p-y)*(p-z);
+    double ris = R(A);
 
-    printf("l'area è %f \n il perimetro è %d",A,p);
+    printf("l'area è %lf \n il perimetro è %d",ris,p*2);
 
     return(0);
 }
