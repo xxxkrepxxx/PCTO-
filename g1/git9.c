@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main()
+void fun()
 {
     int x;
     int y;
@@ -36,4 +36,12 @@ int main()
         printf("inserisci un comando valido!");
     }
     
+}
+
+
+int main()
+{
+    
+
+
 }
