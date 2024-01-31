@@ -4,9 +4,9 @@ int main()
 {
     int n = 100;
 
-    while (n == 0)
+    while (n >= 1)
     {
-        printf(" %d",n);
+        printf(" %d \n",n);
         n = n-2;
     }
     return(0);
