@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-float R(double A)
+double R(double A)
 {
     int t = 0;
     int s = A/2;
@@ -20,11 +20,22 @@ int main()
     printf("inserisci le dimensioni dei lati di un triangolo \n");
     scanf("%d %d %d",&x,&y,&z);
 
-    int p = (x+y+z)/2;
-    double A= p*(p-x)*(p-y)*(p-z);
-    double ris = R(A);
+    if (x+y>z && x+z>y && y+z>x)
+    {
 
-    printf("l'area è %lf \n il perimetro è %d",ris,p*2);
+        int p = (x+y+z)/2;
+        double A= p*(p-x)*(p-y)*(p-z);
+        double ris = R(A);
+
+        printf("l'area è %lf \n il perimetro è %d",ris,p*2);
+        
+    }
+
+    else
+    {
+        printf("le misure inserite non possono formare un triangolo");
+    }
+    
 
     return(0);
 }
