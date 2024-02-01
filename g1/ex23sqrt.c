@@ -1,11 +1,11 @@
-#include<stdio.h>
-#include<math.h>
+#include <math.h>
+#include <stdio.h>
 
 int main()
 {
     int x,y,z;
 
-    printf("inserisci le dimensioni dei lati di un triangolo \n");                          /*gcc git12.c -o a.out -lm*/
+    printf("inserisci le dimensioni dei lati di un triangolo \n");                          /*gcc ex23sqrt.c -o a.out -lm*/
     scanf("%d \n %d \n %d",&x,&y,&z);
 
     if (x+y>z && x+z>y && y+z>x)

@@ -2,8 +2,9 @@
 
 double R(double A)
 {
-    int t = 0;
-    int s = A/2;
+    double t,s;
+    t = 0;
+    s = A/2;
     while (s != t)
     {
         t = s;
@@ -17,7 +18,7 @@ int main()
     int x;
     int y;
     int z;
-    printf("inserisci le dimensioni dei lati di un triangolo \n");
+    puts("inserisci le dimensioni dei lati di un triangolo");
     scanf("%d %d %d",&x,&y,&z);
 
     if (x+y>z && x+z>y && y+z>x)
@@ -33,7 +34,7 @@ int main()
 
     else
     {
-        printf("le misure inserite non possono formare un triangolo");
+        puts("le misure inserite non possono formare un triangolo");
     }
     
 
