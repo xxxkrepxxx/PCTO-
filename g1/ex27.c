@@ -5,7 +5,7 @@ int main()
 
     char s[80];
     puts("inserisci una frase a tua scelta");
-    scanf("%s",s);
+    scanf(" %80[^\n]",s);
     int x = 0;
 
     while (s[x] != '\0')
